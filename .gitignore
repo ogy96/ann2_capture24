@@ -1,0 +1,13 @@
+# --- ANN2 CAPTURE-24 ignores ---
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Data / arrays
+*.npy
+capture24/prepared_data/
+
+# Training artifacts
+outputs/
+capture24/outputs/
+capture24/lightning_logs/
