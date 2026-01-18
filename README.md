@@ -11,6 +11,20 @@ The work compares:
 
 All experiments follow the **Walmsley et al. (2020) four-class activity taxonomy**.
 
+## Reproducibility
+
+All experiments follow the official CAPTURE-24 benchmark protocol.
+
+- Window length: **10 seconds (1000 samples at 100 Hz)**
+- Label taxonomy: **Walmsley et al. (2020), 4 classes**
+- Train–test split: **participant-based**
+  - P001–P100: training / validation
+  - P101–P151: held-out test set
+- Validation split (CNN+HMM, tuned CNN–LSTM): **participant-level, seed = 42**
+- Simple CNN–LSTM is trained **without validation** to match the baseline setup
+
+Raw windowed data and model outputs are not tracked due to size constraints.
+
 ---
 
 ## Repository Structure
@@ -40,3 +54,5 @@ ann2_capture24/
 │   └── conf_matrices.ipynb
 │
 └── .gitignore
+
+
